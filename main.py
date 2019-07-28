@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from wtforms import Form
 from forms import DistanciaForm
 
@@ -18,11 +18,11 @@ def distancia():
         print ("POST request and form is valid")
         features =  request.form['features']
         metodo = request.form['metodo']
-        return render_template_string(completed_template, features=features, metodo=metodo)
+        return render_template("distancia.html", features=features, metodo=metodo)
 
     else:
 
-        return render_template_string(template_form, form=form)
+        return render_template("distancia.html", form=form)
 
 
 @app.route("/oraculo")
