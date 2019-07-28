@@ -5,6 +5,12 @@
 	<title>Operação Clarividência</title>
 </head>
 <body>
-	<h1>Teste</h1>
+	{% extends "template.html" %}
+	<form method="POST" action="." class="form">
+		{{ render_field(form.name, class="input text") }}
+		
+	</form>	
+	{% block content %}
+	{% endblock %}
 </body>
 </html>
