@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Operação Clarividência</title>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Operação Clarividência</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('oraculo') }}">Oráculo</a></li>
+            <li><a href="{{ url_for('distancia') }}">Semelhança</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+ </body>
+</html>
